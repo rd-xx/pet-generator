@@ -14,6 +14,11 @@
 		570821D82A00050700EED004 /* Pet_Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 570821D62A00050700EED004 /* Pet_Generator.xcdatamodeld */; };
 		570821DA2A00050900EED004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570821D92A00050900EED004 /* Assets.xcassets */; };
 		570821DD2A00050900EED004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570821DB2A00050900EED004 /* LaunchScreen.storyboard */; };
+		577682842A003AA500DE0F2D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577682832A003AA500DE0F2D /* ImageDownloader.swift */; };
+		577682862A003AE400DE0F2D /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577682852A003AE400DE0F2D /* APIHelper.swift */; };
+		5776828C2A003D7600DE0F2D /* AllowedPets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776828B2A003D7600DE0F2D /* AllowedPets.swift */; };
+		5776828E2A0048B900DE0F2D /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776828D2A0048B900DE0F2D /* Pet.swift */; };
+		577682902A004AC600DE0F2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776828F2A004AC600DE0F2D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		570821D92A00050900EED004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570821DC2A00050900EED004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570821DE2A00050900EED004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577682832A003AA500DE0F2D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		577682852A003AE400DE0F2D /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		5776828B2A003D7600DE0F2D /* AllowedPets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowedPets.swift; sourceTree = "<group>"; };
+		5776828D2A0048B900DE0F2D /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		5776828F2A004AC600DE0F2D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,10 @@
 		570821CC2A00050700EED004 /* Pet Generator */ = {
 			isa = PBXGroup;
 			children = (
+				577682822A003A8F00DE0F2D /* Model */,
+				577682812A00284E00DE0F2D /* Controller */,
 				570821CD2A00050700EED004 /* AppDelegate.swift */,
 				570821CF2A00050700EED004 /* SceneDelegate.swift */,
-				570821D12A00050700EED004 /* ViewController.swift */,
 				570821D32A00050700EED004 /* Main.storyboard */,
 				570821D92A00050900EED004 /* Assets.xcassets */,
 				570821DB2A00050900EED004 /* LaunchScreen.storyboard */,
@@ -68,6 +79,26 @@
 				570821D62A00050700EED004 /* Pet_Generator.xcdatamodeld */,
 			);
 			path = "Pet Generator";
+			sourceTree = "<group>";
+		};
+		577682812A00284E00DE0F2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				570821D12A00050700EED004 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		577682822A003A8F00DE0F2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				577682832A003AA500DE0F2D /* ImageDownloader.swift */,
+				577682852A003AE400DE0F2D /* APIHelper.swift */,
+				5776828B2A003D7600DE0F2D /* AllowedPets.swift */,
+				5776828D2A0048B900DE0F2D /* Pet.swift */,
+				5776828F2A004AC600DE0F2D /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5776828C2A003D7600DE0F2D /* AllowedPets.swift in Sources */,
+				577682862A003AE400DE0F2D /* APIHelper.swift in Sources */,
 				570821D22A00050700EED004 /* ViewController.swift in Sources */,
+				577682842A003AA500DE0F2D /* ImageDownloader.swift in Sources */,
 				570821D82A00050700EED004 /* Pet_Generator.xcdatamodeld in Sources */,
+				577682902A004AC600DE0F2D /* User.swift in Sources */,
+				5776828E2A0048B900DE0F2D /* Pet.swift in Sources */,
 				570821CE2A00050700EED004 /* AppDelegate.swift in Sources */,
 				570821D02A00050700EED004 /* SceneDelegate.swift in Sources */,
 			);
